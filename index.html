@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellam Deva - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/portfolio.png" type="image/x-icon">
+</head>
+<body>
+    <div class="background-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">Bellam Deva</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://leetcode.com/u/devabellam/" target="_blank">LeetCode</a></li>
+            </ul>
+            <div id="theme-toggle">🌓</div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>I am a <span id="typing"></span></h1>
+        </div>
+    </section>
+
+    <section id="about" class="hidden">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>Hi, I'm Bellam Deva</h1>
+                <p>Enthusiastic and detail-oriented Computer Science graduate with a solid foundation in Data Structures and Algorithms and a passion for solving complex problems. Skilled in designing and developing full-stack web applications using React, JavaScript, Node.js, Express.js, and MongoDB. Adept at applying algorithmic thinking to create efficient, scalable solutions. Seeking opportunities to contribute as a Software Developer by combining strong problem-solving capabilities with modern web development expertise.</p>
+            </div>
+            <img src="images/devagate.jpg" alt="Bellam Deva" class="profile-pic">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>FreshFarmHub</h3>
+                <p>
+
+Developed an e-commerce platform that connects over 50 local farmers with more than 500 customers. The system features secure payments, real-time inventory updates, and robust order management.</p>
+                <a href="https://github.com/BellamDeva/FreshFarmHub">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Chatty – Real-time Chat Application</h3>
+                <p>Developed a scalable real-time messaging platform with authentication, private and group chat support, and seamless live updates using Socket.IO. Designed to handle over 1,000 concurrent users efficiently, with a responsive React front-end and a Node.js/Express.js backend connected to a MongoDB database.</p>
+                <a href="https://github.com/BellamDeva/Chatty">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>SmartBite – Restaurant Ordering Platform</h3>
+                <p>SmartBite is a restaurant ordering platform that allows customers to browse menus, place orders online, and track them in real time. It supports multiple restaurants, enabling each eatery to manage its menu, receive orders instantly, and collect customer feedback to improve service. Built with the MERN stack, it ensures a smooth user experience for both customers and restaurant owners.</p>
+                <a href="https://github.com/BellamDeva/SmartBite">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="hidden">
+        <h2>My Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <img src="images/mbuUni.jpeg" alt="Mohan Babu University">
+                <h3>Mohan Babu University</h3>
+                <p>CGPA: 8.5</p>
+            </div>
+            <div class="education-card">
+                <img src="images/Narayana-Group.webp" alt="Narayana Junior College">
+                <h3>Narayana Junior College</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="hidden">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><span>JavaScript</span></div>
+            <div class="skill-card"><span>React</span></div>
+            <div class="skill-card"><span>Node.js</span></div>
+            <div class="skill-card"><span>Express.js</span></div>
+            <div class="skill-card"><span>MongoDB</span></div>
+            <div class="skill-card"><span>HTML</span></div>
+            <div class="skill-card"><span>CSS</span></div>
+            <div class="skill-card"><span>Data Structures</span></div>
+            <div class="skill-card"><span>Algorithms</span></div>
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Get In Touch</h2>
+        <p>I’m always excited to explore challenging problems and turn ideas into real solutions. From crafting efficient algorithms to building impactful projects, I enjoy making things that work beautifully. If you have an idea, a collaboration in mind, or just want to talk about tech, feel free to reach out — I’d be happy to connect.</p>
+        <form class="contact-form" action="http://localhost:3000/send-email" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/BellamDeva" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/bellamdeva" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://x.com/home" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://leetcode.com/u/devabellam/" target="_blank"><i class="fas fa-code" aria-hidden="true"></i></a>
+        </div>
+        <p>&copy; 2025 Bellam Deva</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="typed.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typing', {
+                strings: ['Full Stack Developer', 'Aspiring Software Engineer', 'DSA Enthusiast'],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+        });
+    </script>
+</body>
+</html>
